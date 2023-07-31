@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Customers | Admin Panel</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+</head>
+
+<body>
+    <div class="container-cust">
+        <div class="navigation">
+            <ul class="ps-0 mb-0">
+                <li>
+                    <a href="admin-dashobard.html" class="d-block">
+                        <span class="img text-center">
+                            <img src="assets/image/logo.png" class="img-fluid">
+                        </span>
+                        <span class="imgsize img1 fw-bold">
+                            <img src="assets/image/logo.png" class="img-fluid">
+                        </span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="admin-dashobard.html">
+                        <span class="icon">
+                            <img src="assets/image/icons/home-w.png" class="img-fluid">
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="view-packages.html">
+                        <span class="icon">
+                            <img src="assets/image/icons/list-w.png" class="img-fluid">
+                        </span>
+                        <span class="title">View Packages</span>
+                    </a>
+                </li>
+                 <li class="">
+                    <a href="view-users.html">
+                        <span class="icon">
+                            <img src="assets/image/icons/ven-w.png" class="img-fluid">
+                        </span>
+                        <span class="title text-capitalize">View  Users</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="view-subscribed-users.html">
+                        <span class="icon">
+                            <img src="assets/image/icons/subscribe-w.png" class="img-fluid">
+                        </span>
+                        <span class="title text-capitalize">View Subscribers</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="user-feedback.html">
+                        <span class="icon">
+                            <img src="assets/image/icons/feedback.png" class="img-fluid">
+                        </span>
+                        <span class="title text-capitalize">Users Feeback</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="view-questions.html">
+                        <span class="icon">
+                            <img src="assets/image/icons/question-w.png" class="img-fluid">
+                        </span>
+                        <span class="title text-capitalize">Questions & Anwsers</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- main -->
+        <div class="main pe-2">
+            <div class="row g-3 align-items-center justify-content-between">
+                <div class="col-lg-4 ">
+                    <div class="toggle topbar">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/image/icons/dashboardicon.png" class="img-fluid">
+                            <h5 class="mb-0 ms-2 text-capitalize">View Users</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center justify-content-end">
+                        
+
+                        <div class="dropdown">
+						  	<button class="btn btn-secondary btndrop-1 dropdown-toggle bg-transparent p-0 border-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						  	  <div class="circle-bg d-flex align-items-center bg-light justify-content-center">
+		                            <img src="assets/image/icons/noti.png" class="img-fluid d-block">
+		                        </div>
+						  </button>
+						  <ul class="dropdown-menu" style="width: 300px" aria-labelledby="dropdownMenuButton1">
+						  	<li>
+						  		<div class="d-flex align-items-center justify-content-between pt-2 px-3">
+						  			<span class="mb-0 text-capitalize fs-14">notifications</span>
+						  			<a href="" class="text-decoration-none text-capitalize fs-12">
+						  				marked all as read
+						  			</a>
+						  		</div>
+						  	</li>
+						  	<li>
+						  		<hr>
+						  	</li>
+						    <li>
+						    	<div>
+						    		<span class="fs-13 text-capitalize text-secondary ps-3">today</span>
+						    		<a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+							    		<div class="d-flex align-items-start">
+							    			<span class="text-capitalize circlewhite bg-secondary text-white">
+								    			amc
+								    		</span>
+								    		<span class="text-capitalize ps-2 fs-12 text-wrap">
+								    			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								    		</span>
+							    		</div>
+							    		<p class="mb-0 fs-12 text-secondary">2 min</p>
+							    	</a>
+						    	</div>
+						    	<div>
+						    		<span class="fs-13 text-capitalize text-secondary ps-3">yesterday</span>
+						    		<a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+							    		<div class="d-flex align-items-start">
+							    			<span class="text-capitalize circlewhite bg-secondary text-white">
+								    			amc
+								    		</span>
+								    		<span class="text-capitalize ps-2 fs-12 text-wrap">
+								    			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								    		</span>
+							    		</div>
+							    		<p class="mb-0 fs-12 text-secondary">2 min</p>
+							    	</a>
+						    	</div>
+						    	<div>
+						    		<span class="fs-13 text-capitalize text-secondary ps-3">today</span>
+						    		<a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+							    		<div class="d-flex align-items-start">
+							    			<span class="text-capitalize circlewhite bg-secondary text-white">
+								    			amc
+								    		</span>
+								    		<span class="text-capitalize ps-2 fs-12 text-wrap">
+								    			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								    		</span>
+							    		</div>
+							    		<p class="mb-0 fs-12 text-secondary">2 min</p>
+							    	</a>
+						    	</div>
+						    </li>
+						  </ul>
+						</div>
+
+
+                        <div class="dropdown">
+						  	<button class="btn btn-secondary btndrop-1 dropdown-toggle bg-transparent p-0 border-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						  	  	<div class="d-flex align-items-center ms-3">
+                            	<img src="assets/image/user.jpg" class="img-fluid rounded-pill w-25s">
+	                            <div class="ms-2">
+	                                <span class="fw-bold d-block fs-14">Remi Olunlonyo</span>
+	                            </div>
+                        	</div>
+						  </button>
+						  <ul class="dropdown-menu lh-sm" aria-labelledby="dropdownMenuButton1">
+						    <li>
+						    	<a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+						    		<span>
+						    			<img src="assets/image/icons/user.png" class="img-fluid">
+						    		</span>
+						    		<span class="text-capitalize p-2">
+						    			my profile
+						    		</span>
+						    	</a>
+						    </li>
+						    <li>
+						    	<a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+						    		<span>
+						    			<img src="assets/image/icons/setting.png" class="img-fluid">
+						    		</span>
+						    		<span class="text-capitalize p-2">
+						    			settings
+						    		</span>
+						    	</a>
+						    </li>
+						    <li>
+						    	<a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+						    		<span>
+						    			<img src="assets/image/icons/logout.png" class="img-fluid">
+						    		</span>
+						    		<span class="text-capitalize p-2">
+						    			logout
+						    		</span>
+						    	</a>
+						    </li>
+						  </ul>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- left side section start -->
+            <div class="mt-4 mb-3">
+                <div class="row g-3">
+                    <div class="col-lg-12">
+                    	<div class="card border-0 shadow bg-transparent">
+                    		<div class="card-body">
+                    			<div class="table-responsive">
+                                    <table class="table table-bordered  border align-middle" id="table">
+                                        <thead class="bg-main text-white">
+                                            <th>
+                                                <span class="text-capitalize fw-semibold fs-14">
+                                                   Title
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="text-capitalize fw-semibold fs-14">
+                                                    first name
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="text-capitalize fw-semibold fs-14">
+                                                    last name
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="text-capitalize fw-semibold fs-14">
+                                                    D.O.B
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="fw-semibold fs-14">
+                                                   Email
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="text-capitalize fw-semibold fs-14">
+                                                    Status
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="text-capitalize fw-semibold fs-14">
+                                                    action
+                                                </span>
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        Mr
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span>
+                                                        Tom
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span>
+                                                        Benzey
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span>
+                                                        12/06/2023
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span>
+                                                        example@gmail.com
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <a href="#viewmodal" data-bs-toggle="modal" class="text-decoration-none bg-main text-white rounded-pill  w-action p-2 d-flex align-items-center justify-content-center">
+                                                            <span data-bs-toggle="tooltip" style="margin-top: -4px;" class="d-block" data-bs-placement="top" title="View Details">
+                                                                <img src="assets/image/icons/eye.png" class="img-fluid">
+                                                            </span>
+                                                        </a>
+                                                        <a href="#deletemodal" data-bs-toggle="modal" class="text-decoration-none bg-danger ms-2 text-white rounded-pill w-action  p-2 d-flex align-items-center justify-content-center">
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Item">
+                                                                <img src="assets/image/icons/trash.png" class="img-fluid">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                    		</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            <!-- left side section end -->
+        </div>
+    </div>
+
+
+    <!-- modal areas -->
+    <div class="modal fade" id="deletemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center p-4">
+                <div>
+                    <h5>Are you sure to delete this customer?</h5>
+                </div>
+            </div>
+            <div class="modal-footer border-0 pb-2 pt-0 justify-content-center">
+                <button type="button" class="border-0 bg-main px-5 py-2 fs-14 text-white">Yes</button>
+                <button type="button" class="border-0 bg-danger px-5 py-2 fs-14 text-white" data-bs-dismiss="modal">No</button>
+            </div>    
+        </div>
+      </div>
+    </div>
+    
+    <!-- view details modal start from here  -->
+    <div class="modal fade" id="viewmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content h-100">
+              <div class="modal-body p-4 position-relative">
+                  <div class="row g-3">
+                      <div class="col-lg-12">
+                          <div class="px-2 py-2">
+                              <div class="mb-3">
+                                  <h3 class="text-capitalize text-center">Customer Details</h3>
+                              </div>
+                              <div>
+                                <div class="row gy-5">
+                                    <div class="col-lg-4">
+                                        <h6 class="text-capitalize mb-0 text-pink">First Name:</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="fs-14 mb-0 text-capitalize">Tom</p>
+                                    </div>
+                                </div>
+                                <div class="row gy-5">
+                                    <div class="col-lg-4">
+                                        <h6 class="text-capitalize mb-0 text-pink">Last name:</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="fs-14 mb-0 text-capitalize">steven</p>
+                                    </div>
+                                </div>
+                                <div class="row gy-5">
+                                    <div class="col-lg-4">
+                                        <h6 class="text-uppercase mb-0 text-pink">D.O.B:</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="fs-14 mb-0 text-capitalize">12/06/2023</p>
+                                    </div>
+                                </div>
+                                <div class="row gy-5">
+                                    <div class="col-lg-4">
+                                        <h6 class="text-capitalize mb-0 text-pink">email:</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="fs-14 mb-0 text-capitalize">examle@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="row gy-5">
+                                    <div class="col-lg-4">
+                                        <h6 class="text-capitalize mb-0 text-pink">conatct Details:</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="fs-14 mb-0 text-capitalize">0300-*********9</p>
+                                    </div>
+                                </div>
+                                <div class="row gy-5">
+                                    <div class="col-lg-4">
+                                        <h6 class="text-capitalize mb-0 text-pink">Address:</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="fs-14 mb-0 text-capitalize">
+                                            NO 123 Building 8C3V+XWR - Industrial Area - Muwailih Commercial Sharjah Sharjah, United Arab Emirates
+                                          </p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+          </div>
+        </div>
+      </div>
+    <!-- js area -->
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/my_script.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#table').DataTable({
+                "language": {
+                    "paginate": {
+                      "previous": '<i class="fa-solid fa-chevron-left p-5px"></i>',
+                      "next": '<i class="fa-solid fa-chevron-right p-5px"></i>',
+                    },
+                    "lengthMenu": "",
+                    search: "",
+                    searchPlaceholder: "Search..."
+                  },
+
+                    "ordering": false
+            });
+        
+    });
+    </script>
+
+    <script type="text/javascript">
+    // menu toggle
+    let toggle = document.querySelector('.toggle');
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.main');
+    let img = document.querySelector('.img');
+    let img1 = document.querySelector('.img1');
+
+
+    toggle.onclick = function() {
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+        img.classList.toggle('active');
+        img1.classList.toggle('active');
+    }
+
+
+    // add hovered class in selected list item
+
+    let list = document.querySelectorAll('.navigation li');
+
+    function activeLink() {
+        list.forEach((item) =>
+            item.classList.remove('hovered'));
+        this.classList.add('hovered');
+    }
+    list.forEach((item) =>
+        item.addEventListener('mouseover', activeLink)
+    );
+
+    $(document).ready(function() {
+        $('#example1').DataTable();
+    });
+    </script>
+    <script type="text/javascript">
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
